@@ -2,10 +2,10 @@
 
 ## Folders
 
-### raw
+### Raw Data
 Original, unmodified data after downloading, scraping, etc.
 
-### final
+### Final Data
 Data after all cleaning, processing, and analyzing.
 
 ---
