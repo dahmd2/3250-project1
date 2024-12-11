@@ -1,37 +1,44 @@
-# Data Folder
+### Data Overview
 
-## Folders
+This project utilizes multiple datasets to analyze the IMDB Top 250 Movies from 2021 and 2024. Below is an explanation of where each dataset originates and what it contains.
 
-### Raw Data
-Original, unmodified data after downloading, scraping, etc.
+#### **1. `2021_List_Top_250_Movies.csv`**
+- **Source**: Kaggle dataset ([IMDB Top 250 Movies Dataset](https://www.kaggle.com/datasets/rajugc/imdb-top-250-movies-dataset?resource=download)).
+- **Description**: This dataset provides a snapshot of the Top 250 movies from 2021, including:
+  - Title
+  - Release year
+  - IMDB rank and rating
+  - Cast and director
+  - Box office revenue and budget
+  - Genre, tagline, and certificate
 
-### Final Data
-Data after all cleaning, processing, and analyzing.
+#### **2. `2024_List_Top_250_Movies_Cleaned_Merged.csv`**
+- **Source**: Scraped from the IMDB website ([Top 250 Movies List](https://www.imdb.com/chart/top/?ref_=nv_mv_250&sort=user_rating%2Cdesc)).
+- **Description**: This dataset combines the latest 2024 rankings with additional details:
+  - Updated rank, rating, and popularity score
+  - Metascore (combining user and critic reviews)
+  - Number of Oscars won
 
----
+#### **3. `top_250_cleaned.csv`**
+- **Source**: Cleaned version of the raw 2024 Top 250 Movies dataset.
+- **Description**: Includes cleaned and verified columns for:
+  - Title
+  - Rank
+  - Rating
+  - Release year
+  - Runtime
 
-## Data dictionary
+#### **4. `top_250_details_cleaned.csv`**
+- **Source**: Scraped additional details from individual movie pages on IMDB.
+- **Description**: Provides enriched information such as:
+  - Metascore
+  - Popularity score
+  - Number of Oscars won
 
-| Field                | Type     | Source            | Description                                                                                     |
-|----------------------|----------|-------------------|-------------------------------------------------------------------------------------------------|
-| `rank_2021`          | Integer  | Kaggle dataset    | This is the ranking of each movie in 2021 (based on IMDB user rating)                          |
-| `rank_2024`          | Integer  | IMDB.com          | This is the ranking of each movie in 2024 (based on IMDB user rating)                          |
-| `title`              | Object   | Both              | Title of the movie                                                                             |
-| `year`               | Integer  | Both              | Year the movie was released                                                                    |
-| `run_time`           | Integer  | Both              | The duration of the movie in minutes                                                          |
-| `IMDB_rating_2021`   | Float    | Kaggle dataset    | User rating of the movie on IMDB scale (1-10)                                                 |
-| `IMDB_rating_2024`   | Float    | IMDB.com          | User rating of the movie on IMDB scale (1-10)                                                 |
-| `average_rating`     | Float    | Both              | Average of the user rating on the IMDB scale (1-10) between 2021 and 2024                     |
-| `genre`              | Object   | Kaggle dataset    | Genres of the movie                                                                           |
-| `box_office`         | Float    | Kaggle dataset    | Total box office revenue collection across the world (in $ USD)                               |
-| `budget`             | Float    | Kaggle dataset    | The total cost of producing the movie (in $ USD)                                              |
-| `certificate`        | Object   | Kaggle dataset    | Movie Certificate (PG-13, R, PG, etc.)                                                        |
-| `tag_line`           | Object   | Kaggle dataset    | A slogan/catchphrase used to promote the movie                                                |
-| `cast`               | Object   | Kaggle dataset    | List of main actors and actresses or anyone that appeared as part of the cast in the movie    |
-| `directors`          | Object   | Kaggle dataset    | The person responsible for overseeing the creative aspects of the film                        |
-| `writers`            | Object   | Kaggle dataset    | List of writers that created and wrote the script/story of the movie                          |
-| `popularity_score`   | Integer  | IMDB.com          | Additional ranking encompassing present user interaction with the movies                      |
-| `metascore`          | Integer  | IMDB.com          | Numeric score that combines user and critic ratings and reviews (1-100)                       |
-| `oscars`             | Object   | IMDB.com          | Number of Oscars won by the movie                                                             |
-| `url`                | Object   | IMDB.com          | Link to each movie’s page pulled from the list                                                |
+#### **5. `2021_2024_List_Top_250_Movies.csv`**
+- **Source**: Merged dataset combining cleaned 2021 and 2024 movie data.
+- **Description**: This is the final dataset used for analysis, including:
+  - Titles present in both years
+  - Comparison of rankings, ratings, and additional metrics
+  - Calculated columns like average rating and profit
 
