@@ -1,6 +1,4 @@
-# Code
-
-## notebooks
+# Notebooks
 Python Jupyter notebooks (.ipynb). Files should be prefixed with the order they should run. 
 
 - Mgradeler_Ddahm_T250_Movies_Scraping_P00.ipynb
