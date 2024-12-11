@@ -3,44 +3,35 @@
 
 # IMDB Top 250 Movies Analysis (2021 vs 2024)
 
-## 📖 Project Overview
+## Project Overview
 This project analyzes changes in the IMDB Top 250 Movies list between 2021 and 2024. We aim to uncover trends, identify correlations, and explore the factors that contribute to a movie's success over time.
 
-### 🎯 Goals
-- Compare rankings and ratings of movies from 2021 and 2024.
-- Investigate which movies remained consistent, improved, or dropped out of the list.
-- Analyze correlations between ratings, metascores, Oscars, and popularity scores.
-- Evaluate the financial performance of movies across genres and budgets.
+## 📖 Data Dictionary
+| Field                | Type     | Source            | Description                                                                                     |
+|----------------------|----------|-------------------|-------------------------------------------------------------------------------------------------|
+| `rank_2021`          | Integer  | Kaggle dataset    | This is the ranking of each movie in 2021 (based on IMDB user rating)                          |
+| `rank_2024`          | Integer  | IMDB.com          | This is the ranking of each movie in 2024 (based on IMDB user rating)                          |
+| `title`              | Object   | Both              | Title of the movie                                                                             |
+| `year`               | Integer  | Both              | Year the movie was released                                                                    |
+| `run_time`           | Integer  | Both              | The duration of the movie in minutes                                                          |
+| `IMDB_rating_2021`   | Float    | Kaggle dataset    | User rating of the movie on IMDB scale (1-10)                                                 |
+| `IMDB_rating_2024`   | Float    | IMDB.com          | User rating of the movie on IMDB scale (1-10)                                                 |
+| `average_rating`     | Float    | Both              | Average of the user rating on the IMDB scale (1-10) between 2021 and 2024                     |
+| `genre`              | Object   | Kaggle dataset    | Genres of the movie                                                                           |
+| `box_office`         | Float    | Kaggle dataset    | Total box office revenue collection across the world (in $ USD)                               |
+| `budget`             | Float    | Kaggle dataset    | The total cost of producing the movie (in $ USD)                                              |
+| `certificate`        | Object   | Kaggle dataset    | Movie Certificate (PG-13, R, PG, etc.)                                                        |
+| `tag_line`           | Object   | Kaggle dataset    | A slogan/catchphrase used to promote the movie                                                |
+| `cast`               | Object   | Kaggle dataset    | List of main actors and actresses or anyone that appeared as part of the cast in the movie    |
+| `directors`          | Object   | Kaggle dataset    | The person responsible for overseeing the creative aspects of the film                        |
+| `writers`            | Object   | Kaggle dataset    | List of writers that created and wrote the script/story of the movie                          |
+| `popularity_score`   | Integer  | IMDB.com          | Additional ranking encompassing present user interaction with the movies                      |
+| `metascore`          | Integer  | IMDB.com          | Numeric score that combines user and critic ratings and reviews (1-100)                       |
+| `oscars`             | Object   | IMDB.com          | Number of Oscars won by the movie                                                             |
+| `url`                | Object   | IMDB.com          | Link to each movie’s page pulled from the list                                                |
 
-### 🔍 Key Analyses
-- **Ranking Consistency:** Identified movies that maintained their rank over time.
-- **Correlation Study:** Explored relationships between metascore, Oscars won, and box office performance.
-- **Genre Profitability:** Ranked genres by total profitability, with Adventure movies leading.
-- **Budget vs. Profitability:** Found a strong positive correlation between production budgets and revenues.
-
-### 🛠️ How This Helps
-This analysis provides valuable insights into:
-- Understanding the dynamics of long-term movie success.
-- Identifying key metrics that contribute to critical and financial acclaim.
-- Helping filmmakers and studios focus on data-driven strategies for future projects.
-
----
-
-### 📂 Repository Structure
-- **`code/`**: Contains Jupyter notebooks used for data scraping, cleaning, and analysis.
-- **`data/`**:  Folder holding the datasets used in the project
-    -**`raw/`**:  Contains unprocessed raw datasets.
-    -**`final/`**:  Contains cleaned and processed datasets.
-- **`results/`**: Contains outputs from the analysis, such as visualizations, summary files, and reports.
-- **`README.md`**: Project overview and instructions.
-
-
-### 📈 Results Highlights
-Key findings from the analysis:
-- Shawshank Redemption has the highest IMDB rating (9.3).
-- Adventure movies are the most profitable, generating $24.67 billion in profits.
-- Avengers: Endgame stands out as an outlier with the highest budget and profit.
-
+### 3250: Data Wrangling
+### Melanie Gradeler & Delanie Dahm
 ---
 
 Feel free to explore the code, data, and results to gain insights into the IMDB Top 250 Movies over time! 🎥
