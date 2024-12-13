@@ -3,7 +3,10 @@
 
 # IMDB Top 250 Movies Analysis (2021 vs 2024)
 
-## Project Overview
+## 3250: Data Wrangling
+## Melanie Gradeler & Delanie Dahm
+
+### Project Overview
 This project analyzes changes in the IMDB Top 250 Movies list between 2021 and 2024. We aim to uncover trends, identify correlations, and explore the factors that contribute to a movie's success over time.
 
 ## 📖 Data Dictionary
@@ -29,9 +32,6 @@ This project analyzes changes in the IMDB Top 250 Movies list between 2021 and 2
 | `metascore`          | Integer  | IMDB.com          | Numeric score that combines user and critic ratings and reviews (1-100)                       |
 | `oscars`             | Object   | IMDB.com          | Number of Oscars won by the movie                                                             |
 | `url`                | Object   | IMDB.com          | Link to each movie’s page pulled from the list                                                |
-
-### 3250: Data Wrangling
-### Melanie Gradeler & Delanie Dahm
 ---
 
 Feel free to explore the code, data, and results to gain insights into the IMDB Top 250 Movies over time! 🎥
