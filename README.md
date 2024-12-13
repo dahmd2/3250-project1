@@ -1,7 +1,6 @@
 ![Python badge](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Iowa City badge](https://img.shields.io/static/v1?message=IA&logo=google-maps&labelColor=ffcd00&color=000000&logoColor=black&label=Iowa%20City&style=for-the-badge)
 ![IMDB Badge](https://img.shields.io/static/v1?label=IMDB%20Top%20250&message=Analysis&color=blue&style=for-the-badge&logo=imdb&logoColor=yellow)
-![Jupyter Notebook](https://img.shields.io/static/v1?label=&message=&color=f37626&style=for-the-badge&logo=jupyter&logoColor=white)
 
 
 # IMDB Top 250 Movies Analysis (2021 vs 2024)
